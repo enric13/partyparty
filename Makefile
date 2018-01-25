@@ -5,3 +5,6 @@ start-dbs:
 
 stop-dbs:
 	docker-compose -f $(DOCKER_COMPOSE_DEV) down
+
+runserver:
+	python src/manage.py runserver
